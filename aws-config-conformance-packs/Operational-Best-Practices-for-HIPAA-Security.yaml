@@ -1166,6 +1166,11 @@ Resources:
       Source:
         Owner: AWS
         SourceIdentifier: S3_BUCKET_POLICY_GRANTEE_CHECK
+      InputParameters:
+        servicePrincipals:
+        - cloudtrail.amazonaws.com
+        - config.amazonaws.com
+        - logging.s3.amazonaws.com
     Type: AWS::Config::ConfigRule
   S3BucketPublicReadProhibited:
     Properties:
