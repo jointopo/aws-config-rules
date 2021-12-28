@@ -1095,13 +1095,6 @@ Resources:
         Owner: AWS
         SourceIdentifier: RESTRICTED_INCOMING_TRAFFIC
     Type: AWS::Config::ConfigRule
-  RootAccountHardwareMfaEnabled:
-    Properties:
-      ConfigRuleName: root-account-hardware-mfa-enabled
-      Source:
-        Owner: AWS
-        SourceIdentifier: ROOT_ACCOUNT_HARDWARE_MFA_ENABLED
-    Type: AWS::Config::ConfigRule
   RootAccountMfaEnabled:
     Properties:
       ConfigRuleName: root-account-mfa-enabled
