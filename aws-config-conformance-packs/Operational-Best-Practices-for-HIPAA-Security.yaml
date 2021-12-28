@@ -1189,16 +1189,6 @@ Resources:
         Owner: AWS
         SourceIdentifier: S3_BUCKET_PUBLIC_WRITE_PROHIBITED
     Type: AWS::Config::ConfigRule
-  S3BucketReplicationEnabled:
-    Properties:
-      ConfigRuleName: s3-bucket-replication-enabled
-      Scope:
-        ComplianceResourceTypes:
-        - AWS::S3::Bucket
-      Source:
-        Owner: AWS
-        SourceIdentifier: S3_BUCKET_REPLICATION_ENABLED
-    Type: AWS::Config::ConfigRule
   S3BucketServerSideEncryptionEnabled:
     Properties:
       ConfigRuleName: s3-bucket-server-side-encryption-enabled
@@ -1228,16 +1218,6 @@ Resources:
       Source:
         Owner: AWS
         SourceIdentifier: S3_BUCKET_VERSIONING_ENABLED
-    Type: AWS::Config::ConfigRule
-  S3DefaultEncryptionKms:
-    Properties:
-      ConfigRuleName: s3-default-encryption-kms
-      Scope:
-        ComplianceResourceTypes:
-        - AWS::S3::Bucket
-      Source:
-        Owner: AWS
-        SourceIdentifier: S3_DEFAULT_ENCRYPTION_KMS
     Type: AWS::Config::ConfigRule
   SagemakerEndpointConfigurationKmsKeyConfigured:
     Properties:
