@@ -759,13 +759,6 @@ Resources:
         Owner: AWS
         SourceIdentifier: IAM_USER_GROUP_MEMBERSHIP_CHECK
     Type: AWS::Config::ConfigRule
-  IamUserMfaEnabled:
-    Properties:
-      ConfigRuleName: iam-user-mfa-enabled
-      Source:
-        Owner: AWS
-        SourceIdentifier: IAM_USER_MFA_ENABLED
-    Type: AWS::Config::ConfigRule
   IamUserNoPoliciesCheck:
     Properties:
       ConfigRuleName: iam-user-no-policies-check
